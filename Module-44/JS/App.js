@@ -13,10 +13,11 @@ const displayData = countries => {
 }
 
 const displayCountry = (country) => {
+  const {name, flags} = country;
   return `
     <div class="countries">
-      <img src="${country.flags.png}" />
-      <h2>${country.name.common}</h2>
+      <img src="${flags.png}" />
+      <h2>${name.common}</h2>
     </div>
   `
 }
