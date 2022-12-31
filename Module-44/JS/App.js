@@ -1,19 +1,25 @@
-const loadCountry = () => {
-  fetch("https://restcountries.com/v3.1/all")
-    .then((res) => res.json())
-    .then((data) => displayCountry(data));
-};
-
-const asyncCountry = async () => {
-  const response = await fetch('https://restcountries.com/v3.1/all');
-  const data = await response.json();
-  console.log(data);
+const loadCountry = async () => {
+  const res = await fetch('https://restcountries.com/v3.1/all');
+  const data = await res.json();
+  displayData(data);
 }
 
-const displayCountry = countries => {
-  console.log(countries);
+const displayData = countries => {
+  if (countries) {
+    const countriesHTML = countries.map(country => displayCountry(country));
+    const container = document.querySelector('.container');
+    container.innerHTML = countriesHTML.join('');
+  }
 }
 
-// loadCountry();
+const displayCountry = (country) => {
+  return `
+    <div class="countries">
+      <img src="${country.flags.png}" />
+      <h2>${country.name.common}</h2>
+    </div>
+  `
+}
 
-asyncCountry()
+loadCountry();
+displayData()
