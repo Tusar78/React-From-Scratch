@@ -24,4 +24,4 @@ const displayCountry = (country) => {
 }
 
 loadCountry();
-displayData()
+displayData();
