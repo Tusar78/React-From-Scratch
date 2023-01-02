@@ -4,7 +4,7 @@ import Hero from './Components/Hero/Hero';
 const App = () => {
   return (
     <div>
-      <Hero />
+      <Hero tool="ReactJS"/>
     </div>
   );
 };
