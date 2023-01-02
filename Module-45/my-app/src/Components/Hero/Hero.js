@@ -2,10 +2,10 @@ import React from 'react';
 import './Hero.css'
 
 const Hero = (props) => {
-  console.log(props);
+  const {tool} = props;
   return (
     <div>
-      <h2>I Love {props.tool}</h2>
+      <h2>I Love {tool}</h2>
     </div>
   );
 };
