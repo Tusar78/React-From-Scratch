@@ -1,8 +1,7 @@
 import React from 'react';
 import './Hero.css'
 
-const Hero = (props) => {
-  const {tool} = props;
+const Hero = ({tool}) => {
   return (
     <div>
       <h2>I Love {tool}</h2>
