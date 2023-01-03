@@ -1,10 +1,10 @@
 import React from 'react';
 import './Hero.css'
 
-const Hero = ({tool}) => {
+const Hero = ({name, job, company}) => {
   return (
     <div>
-      <h2>I Love {tool}</h2>
+      
     </div>
   );
 };

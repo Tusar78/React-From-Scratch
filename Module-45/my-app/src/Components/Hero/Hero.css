@@ -9,6 +9,15 @@ body {
   font-size: 18px;
 }
 
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
 h2 {
   font-size: 24px;
   font-weight: 600;
