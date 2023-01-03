@@ -12,7 +12,7 @@ body {
 .container {
   max-width: 960px;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
@@ -23,6 +23,7 @@ body {
   border: 1px solid #eee;
   border-radius: .5rem;
   padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
 }
 
 img {
@@ -31,11 +32,13 @@ img {
 
 h2 {
   margin-top: 1rem;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
+  font-family: harrington;
 }
 
 span {
   display: block;
   margin-top: .5rem;
+  font-size: 14px;
 }
