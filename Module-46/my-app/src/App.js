@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.css';
 import Countries from './Components/Countries/Countries';
+import useCountries from './Hooks/useCountries';
 
 const App = () => {
+  const {countries} = useCountries();
+
   return (
-    <>
-      <Countries />
-    </>
+    <div className='container'>
+      <Countries countries={countries} />
+    </div>
   );
 };
 

@@ -3,7 +3,28 @@
 @tailwind utilities;
 
 @layer components {
-  
+  .container {
+    @apply max-w-5xl w-full mx-auto
+  }
+  .countries {
+    @apply grid grid-cols-3 gap-4;
+  }
+
+  .country {
+    @apply w-72 border rounded p-4;
+  }
+
+  .country__flag {
+    @apply w-full h-36 rounded block mb-2;
+  }
+
+  .country__title {
+    @apply text-2xl font-semibold text-blue-500;
+  }
+
+  .country__text {
+    @apply text-base text-gray-800;
+  }
 }
 
 @layer utilities {
